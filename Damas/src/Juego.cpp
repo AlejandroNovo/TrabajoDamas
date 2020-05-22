@@ -2,7 +2,7 @@
 #include "glut.h"
 
 Mundo mundo;
-
+//prueba
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
 //NO HACE FALTA LLAMARLAS EXPLICITAMENTE
