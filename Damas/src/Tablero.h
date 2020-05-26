@@ -1,4 +1,5 @@
 #pragma once
+#define TAMANO 8
 
 #include "Casilla.h"
 
@@ -8,8 +9,9 @@
 
 class Tablero
 {
-	Casilla* lista[8][8];
-	int numero;
+	Casilla matriz_casilla[TAMANO][TAMANO];
+	
+	
 
 
 public:
@@ -17,5 +19,7 @@ public:
 	virtual ~Tablero();
 
 	void dibuja();
+	void inicializa();
+
 };
 

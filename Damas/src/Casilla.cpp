@@ -1,14 +1,40 @@
 #include "Casilla.h"
 #include"glut.h"
 
+//#include <iostream>
+//using namespace std;
+
 //CONSTRUCTORES Y DESTRUCTORES
 
-Casilla::Casilla(bool b):blanco(b) {
+Casilla::Casilla(){
 
     lado = 1;
 
 
-    if (blanco)
+    
+}
+
+Casilla :: ~ Casilla() {
+
+
+}
+
+
+
+ void Casilla::Dibuja() {
+
+     glTranslatef(Posicion_Casilla.x,Posicion_Casilla.y,-0.5);
+     glColor3ub(rojo,verde,azul);
+     glutSolidCube(lado);
+     glTranslatef(-Posicion_Casilla.x, -Posicion_Casilla.y, 0.5);
+
+
+ }
+
+ 
+ void Casilla::SetColor(bool b) {
+     blanco = b;
+     if (b)
     {
         rojo = 255;
         verde = 230;
@@ -21,21 +47,5 @@ Casilla::Casilla(bool b):blanco(b) {
         azul = 60;
 
     }
-}
-
-Casilla :: ~ Casilla() {
-
-
-}
-
-
-
- void Casilla::Dibuja() {
-
-
-     glColor3ub(rojo,verde,azul);
-     glutSolidCube(lado);
 
  }
-
- 

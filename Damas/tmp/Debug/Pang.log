@@ -1,7 +1,7 @@
-﻿  Juego.cpp
+﻿  Casilla.cpp
+  Juego.cpp
   Mundo.cpp
   Tablero.cpp
-C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\Tablero.cpp(6,1): error C2512: 'Casilla': no hay disponible un constructor predeterminado adecuado
-C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\Casilla.h(6,7): message : vea la declaración de 'Casilla'
   TableroGL.cpp
   Generando código...
+  Pang.vcxproj -> C:\Users\alejandro\Desktop\TrabajoDamas\Damas\bin\Juego_Damas.exe

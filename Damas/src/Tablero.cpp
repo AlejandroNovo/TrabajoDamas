@@ -1,18 +1,13 @@
 #include "Tablero.h"
 
+#include <iostream>
+using namespace std;
 
 
 Tablero::Tablero()
 {
-	numero = 0;
-	for (int i = 0; i < 8; i++)
-	{
-		for (int j = 0; j < 8; j++) {
-			lista[j] = 0; //Por ahora los 100 valores del puntero no apuntan a nada
-		}
-		lista[i] = 0;
-
-	}
+	
+	
 }
 
 Tablero::~Tablero()
@@ -22,20 +17,37 @@ Tablero::~Tablero()
 
 void Tablero::dibuja()
 {
-	for (int i = 0; i < 8; i ++) {
+	
+	for (int i = 0; i < TAMANO; i++)
+	{
+		for (int j = 0; j < TAMANO; j++) {
 
-		for (int j = 0; j < 8; j++)
-		{
-			glColor3ub(255, 230, 165); //claro
-			if((i + j) % 2 == 0) {
-				glColor3ub(70, 70, 60); //oscuro 
-			}
-			glTranslatef(i, j, -0.5);
-			casilla.Dibuja();
-			//glutSolidCube(1);
-			glTranslatef(-i, -j, 0.5);
-
-
+			matriz_casilla[i][j].Dibuja();
 		}
+
+
 	}
+	
+
+}
+
+void Tablero::inicializa() {
+
+	for (int i = 0; i < TAMANO; i++)
+	{
+		for (int j = 0; j < TAMANO; j++) {
+
+			matriz_casilla[i][j].SetColor(true); //claro
+			matriz_casilla[i][j].setPosicion(i, j);
+			 
+			if ((i + j) % 2 == 0) {
+
+				matriz_casilla[i][j].SetColor(false); //oscuro
+			}
+		}
+
+
+	}
+	
+
 }

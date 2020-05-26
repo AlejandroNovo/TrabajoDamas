@@ -36,6 +36,7 @@ void Mundo::Inicializa()
 	Ficha* aux2 = new Ficha(0.75f, 20, 20,0,255,0);
 	fichasBlancas.agregar(aux2);*/
 	tablerogl.init();
+	tablero.inicializa();
 
 	for (int i = 0; i < 4; i++) {
 		
