@@ -19,5 +19,6 @@ public:
 
 	float operator *  (Vector2D&); //Producto escalar
 	Vector2D operator * (float); //Vector * un escalar
+	bool operator == (Vector2D);
 };
 

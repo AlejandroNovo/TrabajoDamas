@@ -1,4 +1,6 @@
 #include "ListaFichas.h"
+#include<iostream>
+using namespace std;
 
 ///CONSTRUCTORES Y DESTRUCTORES///
 ListaFichas::ListaFichas()
@@ -83,3 +85,20 @@ void ListaFichas::setColor(char r, char g, char b) {
 		lista[i]->setColor(r, g, b);
 	}
 }
+
+
+void ListaFichas::comprueba(int x, int y) {
+
+	Vector2D comprobacion;
+	comprobacion.x = x;
+	comprobacion.y = y;
+
+
+	for (int i = 0; i < numero; i++) {
+
+		if (comprobacion == lista[i]->GetPos() )
+		cout << "La ficha elegida es:" << i << endl;
+	}
+}
+
+

@@ -5,6 +5,7 @@
 class ListaFichas
 {
 private:
+	
 	Ficha* lista[MAX_FICHAS];
 	int numero;
 
@@ -28,6 +29,9 @@ public:
 	}
 
 	void setColor(char r, char g, char b);
+
+	void comprueba(int x, int y);
+
 };
 
 

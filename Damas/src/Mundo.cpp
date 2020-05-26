@@ -82,6 +82,12 @@ void Mundo:: MouseButton(int x, int y, bool down) {
 		x_elegida = tablerogl.Getx_elegida();
 		y_elegida = tablerogl.Gety_elegida();
 
+	//if(x_elegida==(fichasBlancas[i].posicion_ficha.x  negras[i].posicion_ficha.x  && y_elegida == lista[i].posicion_ficha.y)
+		fichasBlancas.comprueba(x_elegida, y_elegida);
+		fichasNegras.comprueba(x_elegida, y_elegida);
+     		
+		
+
 		cout << " Ha pulsado las coordenadas x:" << x_elegida << endl;
 		cout << " Ha pulsado las coordenadas y:" << y_elegida << endl;
 	}

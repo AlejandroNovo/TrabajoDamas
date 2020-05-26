@@ -10,7 +10,7 @@ private:
 	float radio;
 
 	
-	Vector2D posicion;
+	Vector2D posicion_ficha;
 	Vector2D velocidad;
 	Vector2D aceleracion;
 
@@ -33,5 +33,8 @@ public:
 		
 	
 	void mueveDerecha();
+
+	Vector2D GetPos();
+
 
 };
