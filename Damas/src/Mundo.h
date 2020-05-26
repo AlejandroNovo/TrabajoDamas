@@ -1,7 +1,8 @@
-#include "Caja.h"
+#include "TableroGL.h"
 #include "Ficha.h"
 #include "ListaFichas.h"
 #include "Tablero.h"
+
 
 class Mundo
 {
@@ -11,11 +12,15 @@ public:
 	//void RotarOjo();
 	void Mueve();
 	void Dibuja();
+	void MouseButton(int x, int y, bool down);
 
-	Caja caja;
+	
 	ListaFichas fichasBlancas;
 	ListaFichas fichasNegras;
 	Tablero tablero;
+	TableroGL tablerogl;
+
+	int x_elegida, y_elegida;
 
 
 	/*float x_ojo;

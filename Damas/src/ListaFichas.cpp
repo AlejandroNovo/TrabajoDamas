@@ -1,4 +1,6 @@
 #include "ListaFichas.h"
+#include<iostream>
+using namespace std;
 
 ///CONSTRUCTORES Y DESTRUCTORES///
 ListaFichas::ListaFichas()
@@ -24,15 +26,15 @@ bool ListaFichas::agregar(Ficha* f)
 
 	return true;
 
-	numero = 0;
-	for (int i = 0; i < numero; i++)
-	{
-		for (int j = 0; j < numero; j++)
-			if ((lista[i]) == (lista[j]))
-			{
-				return false;
-			}
-	}
+	//numero = 0;
+	//for (int i = 0; i < numero; i++)
+	//{
+	//	for (int j = 0; j < numero; j++)
+	//		if ((lista[i]) == (lista[j]))
+	//		{
+	//			return false;
+	//		}
+	//}
 }
 void ListaFichas::destruirContenido()
 {
@@ -76,3 +78,27 @@ Ficha* ListaFichas::operator[](int i)
 		i = 0;
 	return lista[i];
 }
+
+void ListaFichas::setColor(char r, char g, char b) {
+	for (int i = 0; i <numero; i++) {
+
+		lista[i]->setColor(r, g, b);
+	}
+}
+
+
+void ListaFichas::comprueba(int x, int y) {
+
+	Vector2D comprobacion;
+	comprobacion.x = x;
+	comprobacion.y = y;
+
+
+	for (int i = 0; i < numero; i++) {
+
+		if (comprobacion == lista[i]->GetPos() )
+		cout << "La ficha elegida es:" << i << endl;
+	}
+}
+
+

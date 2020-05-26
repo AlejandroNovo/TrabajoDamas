@@ -1,20 +1,25 @@
 #pragma once
-#include "Vector2D.h"
-#include "Pared.h"
-#include "glut.h"
+#define TAMANO 8
+
+#include "Casilla.h"
+
+
+
+
 
 class Tablero
 {
-private:
-	Pared suelo;
-	Pared techo;
-	Pared pared_izq;
-	Pared pared_dcha;
+	Casilla matriz_casilla[TAMANO][TAMANO];
+	
+	
+
 
 public:
 	Tablero();
 	virtual ~Tablero();
 
 	void dibuja();
+	void inicializa();
+
 };
 

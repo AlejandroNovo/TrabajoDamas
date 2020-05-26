@@ -1,22 +1,4 @@
-﻿  Caja.cpp
-  Casilla.cpp
-  Ficha.cpp
-  ListaFichas.cpp
-  Mundo.cpp
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(30,39): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(33,42): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(38,55): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(38,51): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(38,47): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(39,64): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(39,59): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(39,54): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(40,64): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(40,59): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(40,54): warning C4309: 'argumento': truncamiento de valor constante
-  Juego.cpp
-  Pared.cpp
-  Tablero.cpp
-  Vector2D.cpp
-  Generando código...
-  Pang.vcxproj -> C:\Users\alejandro\Desktop\DaMASSADAS\bin\Juego_Damas.exe
+﻿  ListaFichas.cpp
+C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\ListaFichas.cpp(93,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\ListaFichas.cpp(94,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\alejandro\Desktop\TrabajoDamas\Damas\bin\Juego_Damas.exe
