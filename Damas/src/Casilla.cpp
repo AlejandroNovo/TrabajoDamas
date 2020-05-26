@@ -1,19 +1,41 @@
 #include "Casilla.h"
+#include"glut.h"
 
-Casilla::Casilla(float tam, float x, float y, char r, char v, char a)
-{
-	tamanio = tam;
-	posicion.x = x;
-	posicion.y = y;
+//CONSTRUCTORES Y DESTRUCTORES
 
-	rojo = r;
-	verde = v;
-	azul = a;
+Casilla::Casilla(bool b):blanco(b) {
+
+    lado = 1;
+
+
+    if (blanco)
+    {
+        rojo = 255;
+        verde = 230;
+        azul = 165;
+    }
+    else
+    {
+        rojo = 70;
+        verde = 70;
+        azul = 60;
+
+    }
 }
 
-Casilla::~Casilla()
-{
+Casilla :: ~ Casilla() {
+
+
 }
 
-//prueba
-//prueba2
+
+
+ void Casilla::Dibuja() {
+
+
+     glColor3ub(rojo,verde,azul);
+     glutSolidCube(lado);
+
+ }
+
+ 

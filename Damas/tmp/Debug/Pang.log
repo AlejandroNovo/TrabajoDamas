@@ -1,22 +1,7 @@
-﻿  Caja.cpp
-  Casilla.cpp
-  Ficha.cpp
-  ListaFichas.cpp
+﻿  Juego.cpp
   Mundo.cpp
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(30,39): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(33,42): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(38,55): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(38,51): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(38,47): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(39,64): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(39,59): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(39,54): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(40,64): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(40,59): warning C4309: 'argumento': truncamiento de valor constante
-C:\Users\alejandro\Desktop\DaMASSADAS\src\Mundo.cpp(40,54): warning C4309: 'argumento': truncamiento de valor constante
-  Juego.cpp
-  Pared.cpp
   Tablero.cpp
-  Vector2D.cpp
+C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\Tablero.cpp(6,1): error C2512: 'Casilla': no hay disponible un constructor predeterminado adecuado
+C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\Casilla.h(6,7): message : vea la declaración de 'Casilla'
+  TableroGL.cpp
   Generando código...
-  Pang.vcxproj -> C:\Users\alejandro\Desktop\DaMASSADAS\bin\Juego_Damas.exe

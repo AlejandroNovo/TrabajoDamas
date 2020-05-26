@@ -83,24 +83,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Caja.cpp" />
     <ClCompile Include="src\Casilla.cpp" />
     <ClCompile Include="src\Ficha.cpp" />
     <ClCompile Include="src\ListaFichas.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Juego.cpp" />
-    <ClCompile Include="src\Pared.cpp" />
     <ClCompile Include="src\Tablero.cpp" />
+    <ClCompile Include="src\TableroGL.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Caja.h" />
     <ClInclude Include="src\Casilla.h" />
     <ClInclude Include="src\Ficha.h" />
     <ClInclude Include="src\ListaFichas.h" />
     <ClInclude Include="src\Mundo.h" />
-    <ClInclude Include="src\Pared.h" />
     <ClInclude Include="src\Tablero.h" />
+    <ClInclude Include="src\TableroGL.h" />
     <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,15 +1,16 @@
 #pragma once
-#include "Vector2D.h"
-#include "Pared.h"
-#include "glut.h"
+
+#include "Casilla.h"
+
+
+
+
 
 class Tablero
 {
-private:
-	Pared suelo;
-	Pared techo;
-	Pared pared_izq;
-	Pared pared_dcha;
+	Casilla* lista[8][8];
+	int numero;
+
 
 public:
 	Tablero();

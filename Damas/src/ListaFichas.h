@@ -26,6 +26,8 @@ public:
 	{
 		return numero;
 	}
+
+	void setColor(char r, char g, char b);
 };
 
 

@@ -1,28 +1,31 @@
 #pragma once
-#include "Pared.h"
+#include "stdlib.h"
+#include "glut.h"
 #include "Vector2D.h"
 
-class Casilla
-{
-private:
-	Pared suelo;
-	Pared techo;
-	Pared pared_izq;
-	Pared pared_dcha;
+class Casilla {
+
+public:
 
 	unsigned char rojo;
 	unsigned char verde;
 	unsigned char azul;
+	int lado;
+	bool blanco;
+	
+	
 
-	Vector2D posicion;
-	float tamanio;
 
-public:
-	Casilla();
-	Casilla(float tam, float x = 0.0f, float y = 0.0f, char r = 0, char v = 0, char a = 0);
-	virtual ~Casilla();
+	Casilla(bool b);
+	virtual~Casilla();
 
-	void dibuja();
+	Vector2D  Posicion_Casilla;
+
+	float SetLado();
+	
+	void Dibuja();
+
+
+
+
 };
-
-

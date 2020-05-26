@@ -24,15 +24,15 @@ bool ListaFichas::agregar(Ficha* f)
 
 	return true;
 
-	numero = 0;
-	for (int i = 0; i < numero; i++)
-	{
-		for (int j = 0; j < numero; j++)
-			if ((lista[i]) == (lista[j]))
-			{
-				return false;
-			}
-	}
+	//numero = 0;
+	//for (int i = 0; i < numero; i++)
+	//{
+	//	for (int j = 0; j < numero; j++)
+	//		if ((lista[i]) == (lista[j]))
+	//		{
+	//			return false;
+	//		}
+	//}
 }
 void ListaFichas::destruirContenido()
 {
@@ -75,4 +75,11 @@ Ficha* ListaFichas::operator[](int i)
 	if (i < 0) //si el indice es negativo, devuelvo la primera
 		i = 0;
 	return lista[i];
+}
+
+void ListaFichas::setColor(char r, char g, char b) {
+	for (int i = 0; i <numero; i++) {
+
+		lista[i]->setColor(r, g, b);
+	}
 }
