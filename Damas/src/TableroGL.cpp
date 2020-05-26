@@ -16,7 +16,6 @@ void TableroGL::init() {
 
 void TableroGL::Draw() {
 
-	
 
 	//Borrado de la pantalla	
 	glClearColor(1, 1, 1, 1);

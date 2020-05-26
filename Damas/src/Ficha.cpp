@@ -14,8 +14,6 @@ Ficha::Ficha(float x, float y)
 
 	posicion_ficha.x = x;
 	posicion_ficha.y = y;
-
-
 }
 
 Ficha::~Ficha()
@@ -75,6 +73,7 @@ void Ficha::mueveDerecha()
 	//posicion = (posicion.x + 1, posicion.y + 1);
 	/*posicion.x = posicion.x + 1;
 	posicion.y = posicion.y + 1;*/
+	
 	setPos(posicion_ficha.x + 1, posicion_ficha.y + 1);
 
 	

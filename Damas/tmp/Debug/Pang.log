@@ -1,4 +1,2 @@
-﻿  ListaFichas.cpp
-C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\ListaFichas.cpp(93,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\alejandro\Desktop\TrabajoDamas\Damas\src\ListaFichas.cpp(94,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  Pang.vcxproj -> C:\Users\alejandro\Desktop\TrabajoDamas\Damas\bin\Juego_Damas.exe
+﻿  Ficha.cpp
+  Pang.vcxproj -> C:\Users\jlope.DESKTOP-3003JMM\Desktop\Github\TrabajoDamas\Damas\bin\Juego_Damas.exe
