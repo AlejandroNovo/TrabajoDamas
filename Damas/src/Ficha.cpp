@@ -70,17 +70,14 @@ void Ficha::dibuja()
 
 void Ficha::mueve(int x, int y)
 {
-<<<<<<< HEAD
+
 	posicion_ficha.x = x;
 	posicion_ficha.y = y;
-=======
+
 	//posicion = (posicion.x + 1, posicion.y + 1);
 	/*posicion.x = posicion.x + 1;
 	posicion.y = posicion.y + 1;*/
-	
-	setPos(posicion_ficha.x + 1, posicion_ficha.y + 1);
 
->>>>>>> ac39d0d5e5c5b3c0476a613f0d0d1e92f00fc1bb
 	
 }
 
