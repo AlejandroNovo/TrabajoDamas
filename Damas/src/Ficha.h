@@ -32,7 +32,7 @@ public:
 	
 		
 	
-	void mueveDerecha();
+	void mueve(int x, int y);
 
 	Vector2D GetPos();
 

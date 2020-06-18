@@ -87,18 +87,22 @@ void ListaFichas::setColor(char r, char g, char b) {
 }
 
 
-void ListaFichas::comprueba(int x, int y) {
+int ListaFichas::ElegirFicha(int x, int y) {
 
 	Vector2D comprobacion;
 	comprobacion.x = x;
 	comprobacion.y = y;
-
-
 	for (int i = 0; i < numero; i++) {
+		if (comprobacion == lista[i]->GetPos()) {           // que hayamos pulsado una ficha
 
-		if (comprobacion == lista[i]->GetPos() )
-		cout << "La ficha elegida es:" << i << endl;
+			cout << "La ficha elegida es:" << i << endl;
+
+			return i;
+		}
 	}
+	return 50;
 }
+
+
 
 

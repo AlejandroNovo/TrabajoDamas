@@ -70,13 +70,10 @@ void Ficha::dibuja()
 	glTranslatef(-posicion.x, -posicion.y, 0);*/
 }
 
-void Ficha::mueveDerecha()
+void Ficha::mueve(int x, int y)
 {
-	//posicion = (posicion.x + 1, posicion.y + 1);
-	/*posicion.x = posicion.x + 1;
-	posicion.y = posicion.y + 1;*/
-	setPos(posicion_ficha.x + 1, posicion_ficha.y + 1);
-
+	posicion_ficha.x = x;
+	posicion_ficha.y = y;
 	
 }
 
@@ -85,3 +82,4 @@ Vector2D Ficha::GetPos(){
 
 	return posicion_ficha;
 }
+

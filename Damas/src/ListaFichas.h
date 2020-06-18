@@ -8,11 +8,14 @@ private:
 	
 	Ficha* lista[MAX_FICHAS];
 	int numero;
+	bool ficha_correcta;
 
 public:
 	ListaFichas();
 	virtual ~ListaFichas();
 	void destruirContenido();
+
+	
 
 	bool agregar(Ficha* f);
 	void eliminar(int index);
@@ -30,7 +33,10 @@ public:
 
 	void setColor(char r, char g, char b);
 
-	void comprueba(int x, int y);
+	int ElegirFicha(int x, int y );
+	
+
+
 
 };
 

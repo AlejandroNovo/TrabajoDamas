@@ -32,8 +32,7 @@ int main(int argc,char* argv[])
 	glutMouseFunc(OnMouseClick);
 
 	mundo.Inicializa();
-	
-		
+
 	//pasarle el control a GLUT,que llamara a los callbacks
 	glutMainLoop();	
 
@@ -42,12 +41,17 @@ int main(int argc,char* argv[])
 
 void OnDraw(void)
 {
-	//Borrado de la pantalla	
-   	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	////Borrado de la pantalla	
+	//glClearColor(1, 1, 1, 1);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	//Para definir el punto de vista
-	glMatrixMode(GL_MODELVIEW);	
+	////Para definir el punto de vista
+	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+	gluLookAt(3.5, -10, 10,  // posicion del ojo 10 10 40 
+		3.5, 3.5, 0,      // hacia que punto mira  (0,0,0) 10 10 0
+		0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y) 
+	glEnable(GL_LIGHTING);
 	
 	mundo.Dibuja();
 
@@ -56,10 +60,10 @@ void OnDraw(void)
 }
 void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 {
-
+	
 
 	//poner aqui el código de teclado
-	mundo.Tecla(key);
+	//mundo.Tecla(key);
 	
 	glutPostRedisplay();
 }
@@ -67,7 +71,10 @@ void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 void OnTimer(int value)
 {
 //poner aqui el código de animacion
-	mundo.Mueve();
+	//mundo.Mueve();
+	
+	mundo.Jugar();
+
 
 	//no borrar estas lineas
 	glutTimerFunc(25,OnTimer,0);

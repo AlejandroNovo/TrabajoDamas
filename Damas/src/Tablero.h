@@ -20,6 +20,9 @@ public:
 
 	void dibuja();
 	void inicializa();
+	bool compruebaTablero(int x, int y);
+	bool compruebaBlancaPoisicion(int x, int y, float pos_x, float pos_y);
+	bool compruebaNegraPoisicion (int x, int y, float pos_x, float pos_y);
 
 };
 

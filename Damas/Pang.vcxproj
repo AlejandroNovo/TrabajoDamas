@@ -83,6 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Interaccion.cpp" />
     <ClCompile Include="src\Casilla.cpp" />
     <ClCompile Include="src\Ficha.cpp" />
     <ClCompile Include="src\ListaFichas.cpp" />
@@ -93,6 +94,7 @@
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Interaccion.h" />
     <ClInclude Include="src\Casilla.h" />
     <ClInclude Include="src\Ficha.h" />
     <ClInclude Include="src\ListaFichas.h" />

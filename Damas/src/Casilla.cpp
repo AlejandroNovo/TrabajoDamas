@@ -50,3 +50,7 @@ Casilla :: ~ Casilla() {
 
  }
 
+ Vector2D Casilla::GetPos() {
+
+     return Posicion_Casilla;
+}

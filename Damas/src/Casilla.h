@@ -33,5 +33,7 @@ public:
 
 	void SetColor(bool b);
 
+	Vector2D GetPos();
+
 
 };

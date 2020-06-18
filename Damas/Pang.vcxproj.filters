@@ -39,6 +39,9 @@
     <ClCompile Include="src\TableroGL.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="Interaccion.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Mundo.h">
@@ -60,6 +63,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="src\TableroGL.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Interaccion.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
